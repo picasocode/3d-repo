@@ -19,7 +19,7 @@ const ExperienceCard: React.FC<TExperience> = (experience) => {
         background: "#1d1836",
         color: "#fff",
       }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
@@ -59,7 +59,7 @@ const ExperienceCard: React.FC<TExperience> = (experience) => {
 const Experience = () => {
   return (
     <>
-      <Header useMotion={true} {...config.sections.experience} />
+      <Header useMotion={true} {...config.sections.services} />
 
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>

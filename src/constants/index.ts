@@ -14,24 +14,20 @@ import {
   web,
   javascript,
   typescript,
-  html,
-  css,
+
   reactjs,
   redux,
   tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
   docker,
   meta,
   starbucks,
   tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
-  threejs,
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -40,8 +36,12 @@ export const navLinks: TNavLink[] = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "services",
+    title: "Services",
+  },
+  {
+    id: "projects",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -51,51 +51,51 @@ export const navLinks: TNavLink[] = [
 
 const services: TService[] = [
   {
-    title: "Web Developer",
+    title: "AI Development",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Blockchain Solutions",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Data Analytics",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Cloud & DevOps",
     icon: creator,
   },
 ];
 
 const technologies: TTechnology[] = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "Python",
+    icon: javascript, // Placeholder
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "Solidity",
+    icon: typescript, // Placeholder
   },
   {
-    name: "JavaScript",
-    icon: javascript,
+    name: "TensorFlow",
+    icon: reactjs, // Placeholder
   },
   {
-    name: "TypeScript",
-    icon: typescript,
+    name: "PyTorch",
+    icon: redux, // Placeholder
+  },
+  {
+    name: "Ethereum",
+    icon: tailwind, // Placeholder
+  },
+  {
+    name: "Hyperledger",
+    icon: nodejs, // Placeholder
   },
   {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
   },
   {
     name: "Node JS",
@@ -106,74 +106,57 @@ const technologies: TTechnology[] = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "AWS",
+    icon: docker, // Placeholder
   },
   {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
+    name: "Docker",
     icon: docker,
+  },
+  {
+    name: "Kubernetes",
+    icon: git, // Placeholder
   },
 ];
 
 const experiences: TExperience[] = [
   {
-    title: "React.js Developer",
-    companyName: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    companyName: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    companyName: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    companyName: "Meta",
+    title: "AI & Blockchain Research",
+    companyName: "Martex AI R&D Division",
     icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    iconBg: "#383E56",
+    date: "Jan 2020 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Leading research and development of novel AI algorithms for decentralized networks.",
+      "Developing and auditing smart contracts for security and efficiency.",
+      "Collaborating with clients to integrate AI-powered features into blockchain platforms.",
+      "Publishing whitepapers on the convergence of AI and blockchain technology.",
+    ],
+  },
+  {
+    title: "AI Solutions Architect",
+    companyName: "TechCorp Inc.",
+    icon: starbucks,
+    iconBg: "#E6DEDD",
+    date: "March 2018 - Dec 2019",
+    points: [
+      "Designed and implemented machine learning models for enterprise data analysis.",
+      "Developed secure data pipelines for AI training on sensitive information.",
+      "Oversaw the deployment of AI-driven solutions on cloud infrastructure.",
+      "Provided expert consultation on AI adoption strategies for various industries.",
+    ],
+  },
+  {
+    title: "Blockchain Engineer",
+    companyName: "Global Ledger",
+    icon: tesla,
+    iconBg: "#383E56",
+    date: "July 2016 - Feb 2018",
+    points: [
+      "Engineered and deployed decentralized applications (DApps) on Ethereum.",
+      "Participated in a team focused on building a private blockchain for supply chain management.",
+      "Conducted security audits and penetration testing on smart contracts.",
+      "Contributed to open-source blockchain protocols and community development.",
     ],
   },
 ];
@@ -181,93 +164,66 @@ const experiences: TExperience[] = [
 const testimonials: TTestimonial[] = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
+      "Martex AI's innovative use of AI and blockchain has completely transformed our supply chain. Their platform is secure, efficient, and incredibly intelligent.",
+    name: "Alex Chen",
     designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    company: "Future Supply Co.",
+    image: "https://randomuser.me/api/portraits/men/4.jpg",
+  },
+  {
+    testimonial:
+      "The team at Martex AI delivered a custom AI solution that exceeded all our expectations. Their technical expertise is unmatched.",
+    name: "Maria Rodriguez",
+    designation: "CEO",
+    company: "DataStream Analytics",
+    image: "https://randomuser.me/api/portraits/women/5.jpg",
+  },
+  {
+    testimonial:
+      "Working with Martex AI on our blockchain project was a game-changer. Their insights and dedication ensured the project was a huge success.",
+    name: "David Kim",
+    designation: "Founder",
+    company: "CryptoVault",
+    image: "https://randomuser.me/api/portraits/men/6.jpg",
   },
 ];
 
 const projects: TProject[] = [
   {
-    name: "Car Rent",
+    name: "Decentralized AI Marketplace",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A blockchain-based platform enabling secure and transparent trading of AI models and datasets. Users can monetize their data and models while ensuring ownership and provenance.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "blockchain", color: "blue-text-gradient" },
+      { name: "ai", color: "green-text-gradient" },
+      { name: "web3", color: "pink-text-gradient" },
     ],
     image: carrent,
-    sourceCodeLink: "https://github.com/",
+    sourceCodeLink: "https://github.com/martex-ai/decentralized-ai-market",
   },
   {
-    name: "Job IT",
+    name: "AI-Powered Smart Contract Auditor",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "An automated tool that uses machine learning to identify vulnerabilities and security flaws in smart contract code, significantly reducing the risk of exploits.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
+      { name: "ai", color: "blue-text-gradient" },
+      { name: "solidity", color: "green-text-gradient" },
+      { name: "security", color: "pink-text-gradient" },
     ],
     image: jobit,
-    sourceCodeLink: "https://github.com/",
+    sourceCodeLink: "https://github.com/martex-ai/smart-contract-auditor",
   },
   {
-    name: "Trip Guide",
+    name: "Federated Learning Network",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A platform that allows multiple parties to collaboratively train a shared machine learning model without sharing their raw data, ensuring data privacy and security.",
     tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+      { name: "ai", color: "blue-text-gradient" },
+      { name: "privacy", color: "green-text-gradient" },
+      { name: "cloud", color: "pink-text-gradient" },
     ],
     image: tripguide,
-    sourceCodeLink: "https://github.com/",
+    sourceCodeLink: "https://github.com/martex-ai/federated-learning-network",
   },
 ];
 

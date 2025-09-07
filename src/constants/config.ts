@@ -32,7 +32,7 @@ type TConfig = {
   } & TSection;
   sections: {
     about: Required<TSection>;
-    experience: TSection;
+    services: Required<TSection>;
     feedbacks: TSection;
     works: Required<TSection>;
   };
@@ -40,13 +40,13 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "John Doe — 3D Portfolio",
-    fullName: "John Doe",
-    email: "johndoe@mail.com",
+    title: "Martex AI — AI & Blockchain Solutions",
+    fullName: "Martex AI",
+    email: "contact@martex.ai",
   },
   hero: {
-    name: "John Doe",
-    p: ["I develop 3D visuals, user", "interfaces and web applications"],
+    name: "Martex AI",
+    p: ["We engineer intelligent, secure, and", "decentralized solutions for the future."],
   },
   contact: {
     p: "Get in touch",
@@ -59,36 +59,29 @@ export const config: TConfig = {
       email: { span: "Your Email", placeholder: "What's your email?" },
       message: {
         span: "Your Message",
-        placeholder: "What do you want to say?",
+        placeholder: "What can we build together?",
       },
     },
   },
   sections: {
     about: {
-      p: "Introduction",
-      h2: "Overview.",
-      content: `I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and
-      Three.js. I'm a quick learner and collaborate closely with clients to
-      create efficient, scalable, and user-friendly solutions that solve
-      real-world problems. Let's work together to bring your ideas to life!`,
+      p: "Who We Are",
+      h2: "About Us.",
+      content: `Martex AI is a leading technology firm specializing in artificial intelligence, blockchain, and decentralized applications. Our team of experts is dedicated to creating scalable, secure, and innovative solutions that drive business transformation. We collaborate closely with our clients to turn complex challenges into impactful, real-world applications.`,
     },
-    experience: {
-      p: "What I have done so far",
-      h2: "Work Experience.",
+    services: {
+      p: "What we offer",
+      h2: "Our Services.",
+      content: `We provide a range of services from custom AI model development and blockchain integration to smart contract auditing and decentralized platform creation. Our expertise spans machine learning, cryptography, and full-stack development to deliver comprehensive and robust solutions tailored to your needs.`,
     },
     feedbacks: {
-      p: "What others say",
+      p: "What our clients say",
       h2: "Testimonials.",
     },
     works: {
-      p: "My work",
+      p: "Our Portfolio",
       h2: "Projects.",
-      content: `Following projects showcases my skills and experience through
-    real-world examples of my work. Each project is briefly described with
-    links to code repositories and live demos in it. It reflects my
-    ability to solve complex problems, work with different technologies,
-    and manage projects effectively.`,
+      content: `Our portfolio showcases a selection of our most impactful projects. Each entry highlights our ability to solve complex problems, leverage cutting-edge technologies, and deliver measurable results. Explore our case studies to see how we’ve helped businesses innovate and succeed with our AI and blockchain solutions.`,
     },
   },
 };
